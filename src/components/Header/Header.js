@@ -1,4 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+import { moveUpDown, moveLeftRight } from '../../utils/variants';
 
 import logo from '../../images/logo.jpg';
 
@@ -9,23 +12,36 @@ const Header = () => {
         <div className='wrapper'>
           <img src={logo} alt='CodeDB Logo' className='wrapper__logo' />
           <div class='flex j-center header-container__toolbar'>
-            <div className='header-container__search-container'>
-              <i class='fas fa-search'></i>
+            <motion.div
+              className='header-container__search-container'
+              variants={moveLeftRight(-20)}
+              initial='hidden'
+              animate='visible'
+            >
               <input type='text' placeholder='Search' />
-            </div>
-            <div>
+              <i class='fas fa-search'></i>
+            </motion.div>
+            <motion.div
+              variants={moveUpDown(-20)}
+              initial='hidden'
+              animate='visible'
+            >
               <select>
                 <option value='0'>Language</option>
               </select>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              variants={moveLeftRight(20)}
+              initial='hidden'
+              animate='visible'
+            >
               <button className='button bg-primary'>Search</button>
-            </div>
+            </motion.div>
           </div>
-          <div className='wrapper__login'>
+          <motion.div className='wrapper__login'>
             <button className='button bg-secondary'>Login</button>
             <button className='button bg-inverse-variant-1'>Sign up</button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

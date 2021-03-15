@@ -13,6 +13,12 @@
             width:100%;
             
         }
+
+        &:focus  + i{
+          color:rgba($secondary, .6);
+            
+        }
+
         }
      & input, & select{
          padding:.9rem;
@@ -30,7 +36,9 @@
         transform:translate(-50%,-50%);
         display: flex;
         gap:.6rem;
-         
+         & .button {
+            min-width: 8rem !important;
+        }
     }
     }
 
@@ -40,6 +48,7 @@
         justify-content: center;
         position: relative;
         & .fa-search {
+            transition:1s;
             position:absolute;
             top:49%;
             color:rgba($gray, .4);

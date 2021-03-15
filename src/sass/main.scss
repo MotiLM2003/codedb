@@ -12,6 +12,9 @@
 @import './components/Loader';
 @import './components/progressbar';
 
+@import './layout/content';
 
 
- @import './pages/header';
+@import './pages/header';
+@import './pages/footer';
+@import './pages/details';

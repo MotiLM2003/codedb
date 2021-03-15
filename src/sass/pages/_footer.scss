@@ -1,0 +1,26 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+  
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:$secondary;
+        min-height: 9rem;;
+        & > div {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }  
+    }
+
+    &__copyright {
+        background:$variant-5;
+        text-align: center;
+        padding:1.5rem;
+        color:$text-2;
+        font-size:0.58em;
+        font-weight: 700;
+    }
+}
