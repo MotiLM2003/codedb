@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 46 .5%;
+  scroll-behavior: smooth;
+  
+}
+
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+.wrapper {
+  width:1200px;
+  margin:0 auto;
+  padding:1rem;
+  position: relative;
+}
+
+.textCenter {
+  text-align: center !important;
+}
+// WIDTH
+
+
+
+.bg-primary {
+  background:$primary
+}
+
+.bg-secondary {
+  background:$secondary;
+  color:#fff;
+}
+
+.bg-inverse-variant-1 {
+  border:2px solid $variant-1;
+}
+
+
+
+.w-1 {
+}
+
+// MARGIN
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mt-3 {
+  margin-top: 1.5rem;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.mt-5 {
+  margin-top: 2.5rem;
+}
+.mt-6 {
+  margin-top: 3rem;
+}
+.mt-7 {
+  margin-top: 3.5rem;
+}
+.mt-8 {
+  margin-top: 4rem;
+}
+.mt-9 {
+  margin-top: 4.5rem;
+}
+.mt-10 {
+  margin-top: 5rem;
+}
+.mt-11 {
+  margin-top: 5.5rem;
+}
+.mt-12 {
+  margin-top: 6rem;
+}
+.mt-13 {
+  margin-top: 6.5rem;
+}
+.mt-14 {
+  margin-top: 7rem;
+}
+.mt-15 {
+  margin-top: 7.5rem;
+}
+.mt-16 {
+  margin-top: 8rem;
+}
+.mt-17 {
+  margin-top: 8.5rem;
+}
+.mt-18 {
+  margin-top: 9rem;
+}
+.mt-19 {
+  margin-top: 9.5rem;
+}
+.mt-20 {
+  margin-top: 10rem;
+}
+
+
+.flex-break {
+  flex-basis: 100% !important;
+  height: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 0.7rem;
+}
+.flex-columns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+
+
+// shapes
+.radius-s {
+  border-radius: 0.5rem;
+}
+
+.radius-m {
+  border-radius: 1rem;
+}
+
+.radius-l {
+  border-radius: 1.5rem;
+}
+
+// misc
+.hide {
+  display: 
+  none;
+}
+
+.opacityOff {
+  opacity: 0;
+}
+
+.w-50 {
+  width: 5rem;
+}
+
+.w-75 {
+  width: 7.5rem;
+}
+
+.w-100 {
+  width: 10rem;
+}
+
+.w-125 {
+  width: 12.5rem !important;
+}
+.w-150 {
+  width: 15rem !important;
+}
+
+.w-175 {
+  width: 17.5rem !important ;
+}
+
+.w-200 {
+  width: 20rem !important;
+}
+.w-250 {
+  width: 25rem !important;
+}
+.w-300 {
+  width: 30rem !important;
+}
+.w-350 {
+  width: 35rem;
+}
+.w-400 {
+  width: 40rem !important;
+}
+.w-450 {
+  width: 45rem !important;
+}
+.w-500 {
+  width: 50rem !important;
+}
+.w-550 {
+  width: 55rem !important;
+}
+.w-600 {
+  width: 60rem !important;
+}
+.w-650 {
+  width: 65rem !important;
+}
+.w-700 {
+  width: 70rem !important;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+.p-3 {
+  padding: 1.5rem;
+}
+.p-4 {
+  padding: 2rem;
+}
+
+.font-1 {
+  font-size: 1.1em;
+}
+
+.font-2 {
+  font-size: 1.2em;
+}
+
+.font-3 {
+  font-size: 1.3em;
+}
+
+.font-4 {
+  font-size: 1.4em;
+}
+
+.font-5 {
+  font-size: 1.5em;
+}

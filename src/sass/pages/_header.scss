@@ -1,0 +1,55 @@
+.header-container {
+    background: #333333;
+    height:6rem;
+    color:#fff;
+    &__wrapper {
+        height:inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     & input  {
+        padding-left:2.8rem !important;
+        &:focus{
+            width:100%;
+            
+        }
+        }
+     & input, & select{
+         padding:.9rem;
+     }
+    & .wrapper__logo{
+        position:absolute;
+        left:-3rem;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    & .wrapper__login{
+        position:absolute;
+        right:-22rem;
+        top:50%;
+        transform:translate(-50%,-50%);
+        display: flex;
+        gap:.6rem;
+         
+    }
+    }
+
+    &__search-container {
+        width:40rem;
+        display:flex;
+        justify-content: center;
+        position: relative;
+        & .fa-search {
+            position:absolute;
+            top:49%;
+            color:rgba($gray, .4);
+            left:1.5rem;
+            transform:translate(-50%,-50%);
+            
+
+        }
+        
+    }
+
+ 
+}

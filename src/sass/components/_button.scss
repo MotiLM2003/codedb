@@ -1,0 +1,15 @@
+.button {
+    outline:none;
+    padding:1rem;
+    min-width:100px;
+    border-radius: .2rem;
+    cursor:  pointer;
+    transition: .5s;
+    border:none;
+    font-weight: bold;
+  
+
+    &:hover { 
+        filter: brightness(120%);
+    }
+}
