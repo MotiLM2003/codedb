@@ -13,13 +13,14 @@
             width:100%;
             
         }
-
+          
         &:focus  + i{
           color:rgba($secondary, .6);
             
         }
 
         }
+      
      & input, & select{
          padding:.9rem;
      }
@@ -28,6 +29,12 @@
         left:-3rem;
         top:50%;
         transform:translate(-50%,-50%);
+    }
+
+    @media only screen and (max-width: 1650px) {
+        & .wrapper__logo{
+            left:9rem;
+        }
     }
     & .wrapper__login{
         position:absolute;
@@ -40,6 +47,13 @@
             min-width: 8rem !important;
         }
     }
+
+    @media only screen and (max-width: 1650px) {
+        & .wrapper__login{
+            right:-6rem;
+        }
+    }
+    
     }
 
     &__search-container {
@@ -60,5 +74,12 @@
         
     }
 
- 
+    @media only screen and (max-width: 1650px) {
+        &__search-container { 
+            width:18rem;
+        }
+    }
 }
+
+
+
