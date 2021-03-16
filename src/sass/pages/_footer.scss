@@ -12,8 +12,34 @@
             flex-grow: 1;
             display: flex;
             justify-content: center;
+            gap:2rem;
         }  
     }
+
+    &__content{
+        color:#fff;
+        display: flex;
+        font-size:1rem;
+        
+    }
+
+    &__content-row {
+        display: flex;
+        flex-direction: column;
+        & > div {
+            padding:.2rem;
+        }
+        & > * {
+            transition:.3s;
+        }
+        & > *:hover {
+           display:block;
+            transform: scale(1.05);
+            
+
+        }
+    }
+
 
     &__copyright {
         background:$variant-5;
