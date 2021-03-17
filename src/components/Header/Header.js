@@ -40,9 +40,7 @@ const Header = () => {
           </div>
           <motion.div className='wrapper__login'>
             <button className='button bg-secondary w-125'>Login</button>
-            <button className='button bg-inverse-variant-1  w-125'>
-              Sign up
-            </button>
+            <button className='button bg-inverse-white  w-125'>Sign up</button>
           </motion.div>
         </div>
       </div>

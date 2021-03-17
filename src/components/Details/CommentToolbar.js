@@ -12,7 +12,7 @@ const CommentToolbar = () => {
       </div>
       <div className='flex'>
         <div>
-          <img src={comment} alt='Like button' />
+          <img className='test' src={comment} alt='Like button' />
         </div>
         <div>Comments</div>
       </div>

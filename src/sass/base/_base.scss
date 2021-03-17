@@ -107,6 +107,12 @@ p {
 }
 
 
+.bg-inverse-white {
+  background:transparent;
+  border:1px solid #fff !important;
+  color:#fff;
+}
+
 // colors 
 .color-red {
   color:$variant-4
@@ -222,6 +228,9 @@ p {
   height: 0;
 }
 
+.test {
+  fill:red;
+}
 .flex {
   display: flex;
   align-items: center;

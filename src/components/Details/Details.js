@@ -151,6 +151,7 @@ const Details = () => {
                 doing so. When you contribute to this project, you're helping
                 everyone.
               </div>
+              <CommentToolbar />
             </div>
           </div>
           <div className='details-container__comment details-container__info rounded'>
@@ -158,7 +159,7 @@ const Details = () => {
               <Avatar avatar={avatar3} size='46' />
             </div>
             <div className='details-container__comment-info'>
-              <div className='title-3'>Karjo Situbondo</div>
+              <div className='title-3'>Karjo Situbondo1</div>
               <div className='color-default'>
                 We can confidently assert Files is the platform's best file
                 explorer project to bring your innovations to. We focus heavily
@@ -166,8 +167,8 @@ const Details = () => {
                 doing so. When you contribute to this project, you're helping
                 everyone.
               </div>
+              <CommentToolbar />
             </div>
-            <CommentToolbar />
           </div>
           <div className='details-container__comment details-container__info rounded'>
             <div>

@@ -47,10 +47,12 @@
 
     &__copyright {
         background:$variant-5;
-        text-align: center;
-        padding:1.5rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        padding:1.6rem;
         color:$text-2;
-        font-size:0.58em;
+        font-size:1em;
         font-weight: 700;
         height:80px;
     }
