@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@font-face {
+  font-family: SegoeUI;
+  src: url('../../fonts/SegoeUI.ttf');
+}
+
+@font-face {
+  font-family: SegoeUIBold;
+  src: url('../../fonts/SegoeUIBold.ttf');
+}
 
 * {
   margin: 0;
@@ -11,7 +20,9 @@ html {
   scroll-behavior: smooth;
   min-height: 100vh;
   
+  
 }
+
 
 
 body {
@@ -236,9 +247,6 @@ p {
   height: 0;
 }
 
-.test {
-  fill:red;
-}
 .flex {
   display: flex;
   align-items: center;
