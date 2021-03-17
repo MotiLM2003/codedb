@@ -5,24 +5,26 @@
     &__wrapper {
         height:inherit;
         display: flex;
-        justify-content: center;
+      
         align-items: center;
      & input  {
-        padding-left:2.8rem !important;
+        padding-left:4.2rem !important;
+      
         &:focus{
-            width:100%;
-            
+           
         }
           
         &:focus  + i{
           color:rgba($secondary, .6);
-            
         }
-
-        }
+     }
       
+
+
+
      & input, & select{
-         padding:.9rem;
+         padding:1.59rem;
+         font-size:1.5em
      }
     & .wrapper__logo{
         position:absolute;
@@ -33,12 +35,12 @@
 
     @media only screen and (max-width: 1650px) {
         & .wrapper__logo{
-            left:9rem;
+            left:17rem;
         }
     }
     & .wrapper__login{
         position:absolute;
-        right:-22rem;
+        right:-30rem;
         top:50%;
         transform:translate(-50%,-50%);
         display: flex;
@@ -57,18 +59,19 @@
     }
 
     &__search-container {
-        width:40rem;
+        width:536px;
         display:flex;
-        justify-content: center;
+       
+      
         position: relative;
         & .fa-search {
             transition:1s;
             position:absolute;
             top:49%;
             color:rgba($gray, .4);
-            left:1.5rem;
+            left:2.2rem;
             transform:translate(-50%,-50%);
-            
+            font-size:2.6rem;
 
         }
         
@@ -76,7 +79,7 @@
 
     @media only screen and (max-width: 1650px) {
         &__search-container { 
-            width:18rem;
+            width:46rem;
         }
     }
 }

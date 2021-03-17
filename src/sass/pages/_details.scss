@@ -1,3 +1,68 @@
 .details-container{
+   &__language-tags {
+       display:flex;
+       gap:2rem;
+   }
+
+   &__created {
+       display:flex;
+       align-items:center;
+       gap:5rem;
+     & .text {
+
+     }
+   }
+
+   &__language-Badge {
+       display:flex;
+       gap:1rem;
+   }
+
+
+
+   &__info {
+       background:$gray-light;
+       padding:3rem;
+       margin:2rem 0 0 0;
+       color:#000;
+       
+
+       & pre {
+           background: #fff !important;
+           font-size:14px;
+           padding:1rem;
+       }
+     
+   }
+
+   &__new-comment {
+    display:flex;
    
+    flex-direction:column;
+    gap:1.6rem;
+     & textarea, & input {
+         padding:1.2rem;
+     }
+   }
+
+   &__comments {
+       & section {
+       display:flex;
+       flex-direction:column;
+       gap:.5rem;
+       }
+   }
+   &__comment {
+       display:flex;
+       gap:2rem;
+
+
+   }
+
+   &__comment-info {
+       display:flex;
+       flex-direction: column;
+       gap:2rem;
+       font-size:14px;
+   }
 }
