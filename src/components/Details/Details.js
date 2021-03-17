@@ -12,29 +12,26 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const Details = () => {
-  const codeString = `import React from 'react';
-  import heart from '../../images/heart.svg';
-  import comment from '../../images/comment.svg';
-  const CommentToolbar = () => {
-    return (
-      <div className='flex gap-5'>
-        <div className='flex'>
-          <div>
-            <img src={heart} alt='Like button' />
-          </div>
-          <div>Likes</div>
-        </div>
-        <div className='flex'>
-          <div>
-            <img src={comment} alt='Like button' />
-          </div>
-          <div>Comments</div>
-        </div>
-      </div>
-    );
+  const codeString = ` useEffect(() => {
+    const timer = setInterval(createBubble, 1200);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  const createBubble = () => {
+    if (!containerRef.current) return;
+    const bubble = document.createElement('span');
+    var size = Math.random() * 60;
+    bubble.style.width = 15 + size + 'px';
+    bubble.style.height = 15 + size + 'px';
+    bubble.style.left = Math.random() * (window.innerWidth - 70) + 'px';
+    containerRef.current.appendChild(bubble);
+    setTimeout(() => {
+      bubble.remove();
+    }, 5000);
   };
-  
-  export default CommentToolbar;`;
+`;
   return (
     <div className='details-container wrapper'>
       <section className='details-container__language-tags'>
