@@ -48,7 +48,9 @@ p {
 }
 // WIDTH
 
-
+.cursor {
+  cursor: pointer;
+}
 // titles
 
 .title-1 {
@@ -111,7 +113,13 @@ p {
   background:transparent;
   border:1px solid #fff !important;
   color:#fff;
+  transition: all .5;
 }
+
+.bg-inverse-white:hover {
+  background:#fff;
+  color:#000;
+} 
 
 // colors 
 .color-red {
