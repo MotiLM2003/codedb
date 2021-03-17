@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../images/logo_blue.jpg';
+import logo from '../../images/logo.svg';
 const Footer = () => {
   return (
     <div className='footer-container'>

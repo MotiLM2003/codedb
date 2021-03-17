@@ -8,6 +8,8 @@ import avatar2 from '../../images/avatar2.jpeg';
 import avatar3 from '../../images/avatar3.jpg';
 import avatar4 from '../../images/avatar4.jpg';
 import avatar5 from '../../images/avatar5.png';
+import votes from '../../images/votes.svg';
+import votesSmall from '../../images/votes_small.svg';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
@@ -34,6 +36,15 @@ const Details = () => {
 `;
   return (
     <div className='details-container wrapper'>
+      <div className='details-container__votes'>
+        <div className='flex mb-3 j-center'>
+          <img src={votesSmall} alt='votes small' />
+          <span>348 votes</span>
+        </div>
+        <button className='button flex'>
+          <img src={votes} alt='votes' /> Vote
+        </button>
+      </div>
       <section className='details-container__language-tags'>
         <div>
           <LanguageTag language='javascript' />
@@ -131,8 +142,6 @@ const Details = () => {
       <section className='details-container__new-comment'>
         <h2 className='header-2 mt-8'>Leave a comment</h2>
         <textarea placeholder='Your comment' />
-        <input type='text' placeholder='Your Name' />
-        <input type='text' placeholder='Your Email' />
       </section>
 
       <section className='details-container__comments'>

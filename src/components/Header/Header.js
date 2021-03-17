@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { moveUpDown, moveLeftRight } from '../../utils/variants';
 
-import logo from '../../images/logo.jpg';
+import logo from '../../images/logo.svg';
 
 const Header = () => {
   return (

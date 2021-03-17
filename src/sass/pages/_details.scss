@@ -28,7 +28,7 @@
        
 
        & pre {
-           background: #fff !important;
+           background: $gray-light !important; 
            font-size:14px;
            padding:1rem;
        }
@@ -42,6 +42,10 @@
     gap:1.6rem;
      & textarea, & input {
          padding:1.2rem;
+     }
+
+     & textarea {
+         height:11.6rem;
      }
    }
 
@@ -65,4 +69,24 @@
        gap:2rem;
        font-size:14px;
    }
+
+
+
+   &__votes {
+    position:absolute;
+    top:0;
+    right:0;
+
+    & .button {
+     min-width: 72px;;
+      height:30.5px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    & .button:hover {
+        filter: brightness(80%);
+       }
+}
 }
