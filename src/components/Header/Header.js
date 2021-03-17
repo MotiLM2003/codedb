@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { moveUpDown, moveLeftRight } from '../../utils/variants';
 
-import logo from '../../images/logo.svg';
+import logo from '../../images/logo.png';
 
 const Header = () => {
   return (
@@ -44,6 +44,7 @@ const Header = () => {
           </motion.div>
         </div>
       </div>
+      <div class='test'> CodeDB</div>
     </section>
   );
 };
