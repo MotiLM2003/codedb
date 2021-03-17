@@ -23,14 +23,15 @@
 
 
      & input, & select{
-         padding:1.59rem;
-         font-size:1.5em
+         padding:1.12rem;
+         font-size:1.2em
      }
     & .wrapper__logo{
         position:absolute;
         left:-3rem;
         top:50%;
         transform:translate(-50%,-50%);
+        width:200px;
     }
 
     @media only screen and (max-width: 1650px) {
