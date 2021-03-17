@@ -44,7 +44,6 @@ const Header = () => {
           </motion.div>
         </div>
       </div>
-      <div class='test'> CodeDB</div>
     </section>
   );
 };
