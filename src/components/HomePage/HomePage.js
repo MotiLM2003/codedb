@@ -61,17 +61,15 @@ const HomePage = () => {
             <div class='flex justify-center  '>
               <div className='bg-secondary  rounded home-page__card-item'>
                 <div class='flex direction-column gap-05 align-items-center justify-center'>
+                  <div className='home-page__title color-white'>Accelerate</div>
                   <div className='home-page__title color-white'>
-                    Learning a new
-                  </div>
-                  <div className='home-page__title color-white'>
-                    programming language?
+                    your project!
                   </div>
                   <div className='home-page__title-small mt-2 color-white'>
-                    ...Then first orient yourself
+                    You don't have to test source codes that
                   </div>
                   <div className='home-page__title-small color-white'>
-                    on the examples of others.
+                    already run error-free for others.
                   </div>
                   <div className='mt-4'>
                     <button className='button bg-primary'>Start</button>
@@ -92,6 +90,20 @@ const HomePage = () => {
               Quidam officiis similique sea ei, vel tollit indoctum efficiendi
               ei, at nihil tantas platonem eos.
             </div>
+          </div>
+        </div>
+        <div className='home-page__info-1 flex justify-space-around mt-12'>
+          <div className='flex direction-column'>
+            <div>circle</div>
+            <div>text</div>
+          </div>
+          <div>
+            <div>circle</div>
+            <div>text</div>
+          </div>
+          <div>
+            <div>circle</div>
+            <div>text</div>
           </div>
         </div>
       </section>

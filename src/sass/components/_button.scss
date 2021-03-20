@@ -1,15 +1,14 @@
 .button {
-    outline:none;
-    min-width:112px;
-    height:34px;
-    border-radius: .5rem;
-    cursor:  pointer;
-    transition: .5s;
-    border:none;
-    font-weight: bold;
-    
+  outline: none;
+  min-width: 112px;
+  height: 36.5px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  font-weight: bold;
 
-    &:hover { 
-        filter: brightness(120%);
-    }
+  &:hover {
+    filter: brightness(120%);
+  }
 }
