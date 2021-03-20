@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
-@font-face {
-  font-family: SegoeUI;
-  src: url('../../fonts/SegoeUI.ttf');
-}
-
-@font-face {
-  font-family: SegoeUIBold2;
-  src: url('../../fonts/SegoeUIBold.ttf');
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -19,17 +8,7 @@ html {
   font-size: 46.5%;
   scroll-behavior: smooth;
   min-height: 100vh;
-  font-family: 'SegoeUIBold2';
-  
 }
-
-
-.test {
-  color:red;
-  font-size:40px;
-  font-family: 'Baloo Tammudu 2', cursive;
-  }
-
 
 body {
   font-size: 1.6rem;
@@ -51,12 +30,12 @@ ul {
 }
 
 p {
-  padding:.7rem;
+  padding: 0.7rem;
 }
 .wrapper {
-  width:1200px;
-  margin:0 auto;
-  padding:1rem;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
   position: relative;
 }
 
@@ -71,88 +50,80 @@ p {
 // titles
 
 .title-1 {
-  color:$secondary;
-  font-size:24px;
+  color: $secondary;
+  font-size: 24px;
   font-weight: 500;
 }
 
-
-
 .title-2 {
-  font-size:14px;
- 
+  font-size: 14px;
 }
 
 .title-3 {
-  font-size:17px;
+  font-size: 17px;
   font-weight: 700;
-  color:$variant-6;
+  color: $variant-6;
 }
 
-
-
-
+.bg-white {
+  background: $white;
+}
 
 .bg-primary {
-  background:$primary
+  background: $primary;
 }
 
 .bg-secondary {
-  background:$secondary;
-  color:#fff;
+  background: $secondary;
+  color: #fff;
 }
 
 .bg-inverse-variant-1 {
-  border:2px solid $variant-1;
+  border: 2px solid $variant-1;
 }
-
 
 .bg-javascript {
-  background:$color-javascript;
+  background: $color-javascript;
 }
 
-
 .bg-php {
-  background:$color-php;
- 
+  background: $color-php;
 }
 
 .bg-python {
-  background:$color-python;
+  background: $color-python;
 }
 
 .bg-java {
-  background:$color-java;
+  background: $color-java;
 }
 
-
 .bg-inverse-white {
-  background:transparent;
-  border:1px solid #fff !important;
-  color:#fff;
-  transition: all .5;
+  background: transparent;
+  border: 1px solid #fff !important;
+  color: #fff;
+  transition: all 0.5;
 }
 
 .bg-inverse-white:hover {
-  background:#fff;
-  color:#000;
-} 
+  background: #fff;
+  color: #000;
+}
 
-// colors 
+// colors
 .color-red {
-  color:$variant-4
-
+  color: $variant-4;
 }
 
 .color-default {
-  color:$variant-1 !important;
+  color: $variant-1 !important;
 }
 .color-light-blue {
-  color:$light-blue
+  color: $light-blue;
 }
 
 .color-green {
-  color:$green;
+  color: $green;
 }
 
 .bold {
@@ -240,12 +211,44 @@ p {
   margin-top: 10rem;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
+.font-light {
+  font-weight: light;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-27 {
+  font-size: 27px;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+.font-size-47 {
+  font-size: 40px;
+}
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-56 {
+  font-size: 56px;
+}
 .header-2 {
   font-family: 'Montserrat', sans-serif;
-  font-size:24px;
+  font-size: 24px;
   font-weight: 700;
-  color:$variant-5;
-
+  color: $variant-5;
 }
 
 .flex-break {
@@ -253,37 +256,94 @@ p {
   height: 0;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
+.font-family-dm-sans {
+  font-family: 'DM Sans', sans-serif !important;
+}
+.font-weight-100 {
+  font-weight: 100;
 }
 
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+.line-height-23 {
+  line-height: 23px;
+}
+
+.line-height-29 {
+  line-height: 29px;
+}
+
+.flex {
+  display: flex;
+}
+
+.grow {
+  flex-grow: 1;
+}
 .gap-1 {
-  gap:1rem;
+  gap: 1rem;
 }
 
 .gap-2 {
-  gap:1.5rem;
+  gap: 1.5rem;
 }
 
 .gap-3 {
-  gap:2rem;
+  gap: 2rem;
 }
 
 .gap-4 {
-  gap:2.5rem;
+  gap: 2.5rem;
 }
 
 .gap-5 {
-  gap:3rem;
+  gap: 3rem;
 }
 .j-center {
   justify-content: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.align-item-center {
+  align-items: center;
+}
 .a-center {
   align-items: center;
+}
+
+.flex2 {
+}
+
+.direction-column {
+  flex-direction: column;
 }
 
 .rounded {
@@ -295,8 +355,6 @@ p {
   flex-direction: column;
   gap: 0.7rem;
 }
-
-
 
 // shapes
 .radius-s {
@@ -313,8 +371,7 @@ p {
 
 // misc
 .hide {
-  display: 
-  none;
+  display: none;
 }
 
 .opacityOff {
@@ -360,8 +417,13 @@ p {
   width: 40rem !important;
 }
 .w-450 {
-  width: 45rem !important;
+  width: 450px !important;
 }
+
+.w-485 {
+  width: 485px !important;
+}
+
 .w-500 {
   width: 50rem !important;
 }
@@ -378,6 +440,13 @@ p {
   width: 70rem !important;
 }
 
+.w-1000 {
+  width: 1000px;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
 .p-1 {
   padding: 0.5rem;
 }

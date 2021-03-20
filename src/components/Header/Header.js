@@ -11,7 +11,7 @@ const Header = () => {
       <div className='header-container__wrapper'>
         <div className='wrapper'>
           <img src={logo} alt='CodeDB Logo' className='wrapper__logo' />
-          <div class='flex j-center header-container__toolbar'>
+          <div class='flex j-center header-container__toolbar gap-1'>
             <motion.div
               className='header-container__search-container'
               variants={moveLeftRight(-20)}

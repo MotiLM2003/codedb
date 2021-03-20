@@ -1,0 +1,35 @@
+.home-page {
+  min-height: 60vh;
+  &__hero {
+    background: linear-gradient(rgba($secondary, 0.8), rgba($secondary, 0.8)),
+      url('../../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    min-height: 753px;
+    width: 100%;
+  }
+
+  &__hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 753px;
+    color: #fff;
+    border-bottom: 20px solid rgba($secondary, 0.75);
+  }
+
+  &__hero-text {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__card {
+    & .card {
+      color: #000;
+      border: 1px solid $gray-light;
+      margin-top: -12rem;
+      height: 192px;
+      box-shadow: 2px 2px 3px 1px $gray-light;
+    }
+  }
+}

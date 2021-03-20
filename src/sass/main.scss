@@ -4,7 +4,6 @@
 @import './abstracts/mixins';
 @import './abstracts/functions';
 
-
 @import './components/input';
 @import './components/button';
 @import './components/divider';
@@ -14,10 +13,11 @@
 @import './components/language-tag';
 @import './components/avatar';
 @import './components/language-badge';
+@import './components/card';
 
 @import './layout/content';
-
 
 @import './pages/header';
 @import './pages/footer';
 @import './pages/details';
+@import './pages/HomePage';
