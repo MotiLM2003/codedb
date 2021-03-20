@@ -9,16 +9,16 @@ const HomePage = () => {
         <div className='home-page__hero-content'>
           <div className='flex justify-center home-page__hero-text gap-2'>
             <div className='flex direction-column'>
-              <p className='home-page__hero-text font-weight-700 font-size-50 p-0'>
+              <p className='home-page__hero-text font-weight-700 font-size-38 p-0'>
                 CodeDB -
               </p>
-              <p className='home-page__hero-text font-weight-200 font-size-47 p-0 letter-spacing-3'>
+              <p className='home-page__hero-text font-weight-200 font-size-35 p-0 letter-spacing-3'>
                 Database for
               </p>
-              <p className='home-page__hero-text font-weight-200 font-size-47 p-0 letter-spacing-3'>
+              <p className='home-page__hero-text font-weight-200 font-size-35 p-0 letter-spacing-3'>
                 your source codes
               </p>
-              <p className='home-page__hero-text font-weight-200 font-size-20 p-0 w-600 mt-6 line-height-29 font-family-dm-sans'>
+              <p className='home-page__hero-text font-weight-200 font-size-16 p-0 w-600 mt-6 line-height-29 font-family-dm-sans'>
                 Archive code snippets and make them available for others… For
                 the next project, you have your best solutions right at hand
                 without having to search for them.
@@ -83,10 +83,10 @@ const HomePage = () => {
       <section className='wrapper mt-14'>
         <div className='home-page__hiw flex justify-center'>
           <div className='flex direction-column'>
-            <div className='text-align-center font-family-montserrat font-size-56 font-weight-700 color-dark'>
+            <div className='text-align-center font-family-montserrat font-size-40 font-weight-700 color-dark'>
               How it works
             </div>
-            <div className='text-align-center w-570 font-family-dm-sans font-size-20 mt-3'>
+            <div className='text-align-center w-570 font-family-dm-sans font-size-16 mt-3'>
               Quidam officiis similique sea ei, vel tollit indoctum efficiendi
               ei, at nihil tantas platonem eos.
             </div>
