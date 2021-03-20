@@ -82,6 +82,9 @@ p {
   border: 2px solid $variant-1;
 }
 
+.bg-variant-7 {
+  background: $variant-7;
+}
 .bg-javascript {
   background: $color-javascript;
 }
@@ -111,6 +114,13 @@ p {
 }
 
 // colors
+.color-white {
+  color: $white !important;
+}
+
+.color-black {
+  color: $black !important;
+}
 .color-red {
   color: $variant-4;
 }
@@ -124,6 +134,10 @@ p {
 
 .color-green {
   color: $green;
+}
+
+.color-dark {
+  color: $color-dark;
 }
 
 .bold {
@@ -244,6 +258,7 @@ p {
 .font-size-56 {
   font-size: 56px;
 }
+
 .header-2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -258,6 +273,10 @@ p {
 
 .font-family-dm-sans {
   font-family: 'DM Sans', sans-serif !important;
+}
+
+.font-family-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 .font-weight-100 {
   font-weight: 100;
@@ -297,6 +316,9 @@ p {
 .grow {
   flex-grow: 1;
 }
+.gap-05 {
+  gap: 0.5rem;
+}
 .gap-1 {
   gap: 1rem;
 }
@@ -332,11 +354,15 @@ p {
   justify-content: space-around;
 }
 
-.align-item-center {
+.align-items-center {
   align-items: center;
 }
 .a-center {
   align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .flex2 {
@@ -430,6 +456,11 @@ p {
 .w-550 {
   width: 55rem !important;
 }
+
+.w-570 {
+  width: 570px;
+}
+
 .w-600 {
   width: 60rem !important;
 }

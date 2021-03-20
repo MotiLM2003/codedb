@@ -16,7 +16,6 @@
     align-items: center;
     height: 753px;
     color: #fff;
-    border-bottom: 20px solid rgba($secondary, 0.75);
   }
 
   &__hero-text {
@@ -27,9 +26,29 @@
     & .card {
       color: #000;
       border: 1px solid $gray-light;
-      margin-top: -12rem;
-      height: 192px;
+      margin-top: -13rem;
+      height: 252px;
       box-shadow: 2px 2px 3px 1px $gray-light;
     }
+  }
+
+  &__card-item {
+    height: 220px;
+    width: 475px;
+    padding: 3.6rem;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+  }
+
+  &__title-small {
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
   }
 }
