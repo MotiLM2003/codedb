@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import Details from './components/Details/Details';
 import HomePage from './components/HomePage/HomePage';
 import FAQs from './components/FAQs/FAQs';
+import Contact from './components/Contact/Contact';
 const App = () => {
   return (
     <div
@@ -14,7 +15,7 @@ const App = () => {
       </section>
       <section style={{ flexGrow: 1 }}>
         <div className='main-content'>
-          <FAQs />
+          <Contact />
         </div>
       </section>
       <section>
