@@ -7,7 +7,7 @@ const HomePage = () => {
     <div className='home-page'>
       <section className='home-page__hero'>
         <div className='home-page__hero-content'>
-          <div className='flex justify-center home-page__hero-text gap-2'>
+          <div className='flex justify-center  home-page__hero-container gap-2'>
             <div className='flex direction-column'>
               <p className='home-page__hero-text font-weight-700 font-size-38 p-0'>
                 CodeDB -

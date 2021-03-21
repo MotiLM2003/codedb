@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 50%;
-    min-height: 753px;
+    min-height: 553px;
     width: 100%;
   }
 
@@ -14,8 +14,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 753px;
+    height: 553px;
     color: #fff;
+  }
+
+  &__hero-container {
+    margin-top: -9rem;
   }
 
   &__hero-text {
