@@ -86,9 +86,9 @@ const HomePage = () => {
       <section className='wrapper mt-14'>
         <div className='home-page__hiw flex justify-center'>
           <div className='flex direction-column'>
-            <div className='text-align-center font-family-montserrat font-size-40 font-weight-700 color-dark'>
+            <h2 className='text-align-center font-family-montserrat font-size-40 font-weight-700 color-dark shadow-bold-1-1'>
               How it works
-            </div>
+            </h2>
             <div className='text-align-center w-570 font-family-dm-sans font-size-16 mt-3'>
               Quidam officiis similique sea ei, vel tollit indoctum efficiendi
               ei, at nihil tantas platonem eos.

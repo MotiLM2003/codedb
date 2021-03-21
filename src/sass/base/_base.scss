@@ -49,6 +49,14 @@ p {
 }
 // titles
 
+.shadow-bold-1 {
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.shadow-bold-1-1 {
+  text-shadow: 1.5px 0 0 currentColor;
+}
+
 .title-1 {
   color: $secondary;
   font-size: 24px;
