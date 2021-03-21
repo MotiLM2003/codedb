@@ -1,0 +1,9 @@
+.not-found {
+  & > div {
+  }
+
+  &__404 {
+    position: absolute;
+    bottom: 90px;
+  }
+}
