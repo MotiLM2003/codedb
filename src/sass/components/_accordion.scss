@@ -10,6 +10,16 @@
     font-size: 18px;
     font-weight: 700;
     border-bottom: 1px solid $gray-light;
+
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      border-width: 5px;
+    }
+  }
+
+  &__box {
+    width: 900px;
     display: flex;
     & > div:first-child {
       flex-grow: 1;

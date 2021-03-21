@@ -4,7 +4,7 @@ const PageHeader = ({ text }) => {
   return (
     <div className='page-header'>
       <section className='wrapper page-header__text'>
-        <p>{text}</p>
+        <h3>{text}</h3>
       </section>
     </div>
   );
