@@ -19,7 +19,10 @@ const Contact = () => {
             <input type='text' className='' placeholder='Your name'></input>
             <input type='text' className='' placeholder='Your e-mail'></input>
             <input type='text' className='' placeholder='Message'></input>
-            <textarea style={{ height: '100px' }}></textarea>
+            <textarea
+              style={{ height: '100px' }}
+              placeholder='Subject'
+            ></textarea>
             <button className='button bg-secondary w-300 mt-10'>
               Send contact request
             </button>
