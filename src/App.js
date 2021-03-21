@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/HomePage';
 import FAQs from './components/FAQs/FAQs';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
+import Careers from './components/Careers/Careers';
 const App = () => {
   return (
     <div
@@ -16,7 +17,7 @@ const App = () => {
       </section>
       <section style={{ flexGrow: 1 }}>
         <div className='main-content'>
-          <NotFound />
+          <Careers />
         </div>
       </section>
       <section>
