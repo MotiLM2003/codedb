@@ -1,0 +1,22 @@
+.accordion-menu {
+  width: 900px;
+
+  padding: 2rem 0;
+
+  &__item {
+    font-family: 'DM Sans', sans-serif !important;
+    padding: 2.5rem;
+    color: $color-dark;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid $gray-light;
+    display: flex;
+    & > div:first-child {
+      flex-grow: 1;
+    }
+  }
+
+  &__item:first-child {
+    border-top: 1px solid $gray-light;
+  }
+}

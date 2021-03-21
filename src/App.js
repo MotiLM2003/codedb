@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Details from './components/Details/Details';
 import HomePage from './components/HomePage/HomePage';
+import FAQs from './components/FAQs/FAQs';
 const App = () => {
   return (
     <div
@@ -13,7 +14,7 @@ const App = () => {
       </section>
       <section style={{ flexGrow: 1 }}>
         <div className='main-content'>
-          <HomePage />
+          <FAQs />
         </div>
       </section>
       <section>

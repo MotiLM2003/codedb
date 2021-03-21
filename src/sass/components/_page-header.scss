@@ -1,0 +1,16 @@
+.page-header {
+  background: linear-gradient(rgba($secondary, 0.8), rgba($secondary, 0.8)),
+    url('../../images/page-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    color: $white !important;
+    font-size: 37px;
+    font-weight: bold;
+  }
+}

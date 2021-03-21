@@ -148,6 +148,14 @@ p {
   color: $color-dark;
 }
 
+.color-secondary {
+  color: $secondary !important;
+}
+
+.color-primary {
+  color: $primary;
+}
+
 .bold {
   font-weight: 500;
 }
@@ -243,6 +251,14 @@ p {
 
 .font-size-16 {
   font-size: 16px;
+}
+
+.font-size-17 {
+  font-size: 17px;
+}
+
+.font-size-18 {
+  font-size: 18px;
 }
 
 .font-size-20 {
