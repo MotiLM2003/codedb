@@ -1,7 +1,10 @@
 import React from 'react';
 
 import hero from '../../images/hero.jpg';
+import envelop from '../../images/envelop.svg';
 import heroSide from '../../images/home-page-hero-logo.svg';
+import files from '../../images/files.svg';
+import cube from '../../images/cube.svg';
 const HomePage = () => {
   return (
     <div className='home-page'>
@@ -92,18 +95,67 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className='home-page__info-1 flex justify-space-around mt-12'>
-          <div className='flex direction-column'>
-            <div>circle</div>
-            <div>text</div>
+        <div className='home-page__info-1 flex justify-space-around mt-16'>
+          <div className='flex direction-column align-items-center gap-2'>
+            <div>
+              <div className='home-page__circle'>
+                <img src={envelop} alt='title' />
+              </div>
+            </div>
+            <div className='home-page__circle-text'>
+              Upload your functions and code fragments you need more often
+            </div>
           </div>
           <div>
-            <div>circle</div>
-            <div>text</div>
+            <div className='flex direction-column align-items-center gap-2'>
+              <div>
+                <div className='home-page__circle'>
+                  <img src={files} alt='title' />
+                </div>
+              </div>
+              <div className='home-page__circle-text'>
+                Add your code pieces and those of others to your favourites
+                list.
+              </div>
+            </div>
           </div>
           <div>
-            <div>circle</div>
-            <div>text</div>
+            <div className='flex direction-column align-items-center gap-2'>
+              <div>
+                <div className='home-page__circle'>
+                  <img src={cube} alt='title' />
+                </div>
+              </div>
+              <div className='home-page__circle-text'>
+                Use your favorites list and our search for your next project to
+                copy source code directly into your project rather than
+                rewriting it completely yourself.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='wrapper mt-16'>
+        <div className='home-page__bottom-card'>
+          <div>
+            Why Use <br />
+            CodeDB?
+          </div>
+          <div className='flex direction-column gap-4'>
+            <div className='font-family-dm-sans font-size-23 font-weight-700 color-dark'>
+              As developers, we realized that we often search for source code
+              from old projects, copy it and just adapt it.
+            </div>
+            <div className='font-size-16'>
+              This way we need less time for debugging, since the code snippets
+              basically already worked and we make far fewer mistakes by
+              adapting them than if we completely rewrote the source code
+              ourselves. However, searching old projects for a specific function
+              not only requires a good memory, but is also quite cumbersome.
+              That's why we developed a platform where we can upload these
+              functions and pieces of code to quickly find them later and share
+              good codes with others.
+            </div>
           </div>
         </div>
       </section>
