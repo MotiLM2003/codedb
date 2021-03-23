@@ -1,22 +1,21 @@
 import React from 'react';
 
 const AccordionMenuItem = (props) => {
-  const { children, header } = props;
+  const { children, header, isOpen = false } = props;
+  const className = isOpen
+    ? 'accordion-menu--item-open'
+    : 'accordion-menu--item-close';
+  const itemSymbol = isOpen ? '+' : '-';
 
   return (
-    <div>
+    <div className='accordion-menu__item-container'>
       <div className='accordion-menu__item'>
         <div className='accordion-menu__box'>
           <div>{header}</div>
-          <div className='color-secondary font-size-20'>-</div>
+          <div className='color-secondary font-size-20'>{itemSymbol}</div>
         </div>
       </div>
-      <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-        quidem itaque, aliquid quae expedita nisi dolore corporis veritatis
-        perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
-        soluta officiis!
-      </div>
+      <div className={`${className} accordion-menu__content`}>{children}</div>
     </div>
   );
 };

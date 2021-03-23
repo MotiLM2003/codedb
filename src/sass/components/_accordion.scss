@@ -2,6 +2,15 @@
   width: 900px;
 
   padding: 2rem 0;
+  transition: all 0.5s;
+  &__item-container {
+    border-bottom: 1px solid $gray-light;
+    transition: all 0.5s;
+    &:hover {
+      border-width: 5px;
+      transition: all 0.5s;
+    }
+  }
 
   &__item {
     font-family: 'DM Sans', sans-serif !important;
@@ -9,13 +18,17 @@
     color: $color-dark;
     font-size: 18px;
     font-weight: 700;
-    border-bottom: 1px solid $gray-light;
+    // border-bottom: 1px solid $gray-light;
 
     cursor: pointer;
-    transition: all 0.5s;
-    &:hover {
-      border-width: 5px;
-    }
+  }
+
+  &--item-open {
+    display: block;
+  }
+
+  &--item-close {
+    display: none;
   }
 
   &__box {
@@ -28,5 +41,10 @@
 
   &__item:first-child {
     border-top: 1px solid $gray-light;
+  }
+
+  &__content {
+    padding: 1rem 0 2rem 2rem;
+    font-size: 14px;
   }
 }
