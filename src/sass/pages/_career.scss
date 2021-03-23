@@ -1,0 +1,15 @@
+.career {
+  &__header {
+    padding: 4rem 0;
+    font-size: 16px;
+    color: $secondary;
+  }
+
+  &__list {
+    padding-left: 2.5rem;
+    & li {
+      list-style-type: disc !important;
+      font-family: 'DM Sans', sans-serif !important;
+    }
+  }
+}

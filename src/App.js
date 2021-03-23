@@ -17,9 +17,7 @@ const App = () => {
       </section>
       <section style={{ flexGrow: 1 }}>
         <div className='main-content'>
-          {/*<Careers />*/}
-          {/*<Details />*/}
-          <FAQs />
+          <Careers />
         </div>
       </section>
       <section>

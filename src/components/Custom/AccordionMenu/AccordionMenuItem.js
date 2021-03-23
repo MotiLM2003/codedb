@@ -12,10 +12,15 @@ const AccordionMenuItem = (props) => {
       <div className='accordion-menu__item'>
         <div className='accordion-menu__box'>
           <div>{header}</div>
-          <div className='color-secondary font-size-20'>{itemSymbol}</div>
+          <div className='color-secondary font-size-20'>{itemSymbol}s</div>
         </div>
       </div>
-      <div className={`${className} accordion-menu__content`}>{children}</div>
+      <div>
+        <div className={`${className} accordion-menu__content`}>{children}</div>
+        <div className='justify-flex-end'>
+          <button className='button '>sasad</button>{' '}
+        </div>
+      </div>
     </div>
   );
 };
