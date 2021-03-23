@@ -85,7 +85,7 @@ const Careers = () => {
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
             soluta officiis!
           </AccordionMenuItem>
-          <AccordionMenuItem header='Interactive Developer'>
+          <AccordionMenuItem header='Interactive Developer' isWithButton={true}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
             quidem itaque, aliquid quae expedita nisi dolore corporis veritatis
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
@@ -97,7 +97,10 @@ const Careers = () => {
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
             soluta officiis!
           </AccordionMenuItem>
-          <AccordionMenuItem header='Lead Product Designer, Design Systems'>
+          <AccordionMenuItem
+            header='Lead Product Designer, Design Systems'
+            isWithButton={true}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
             quidem itaque, aliquid quae expedita nisi dolore corporis veritatis
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
