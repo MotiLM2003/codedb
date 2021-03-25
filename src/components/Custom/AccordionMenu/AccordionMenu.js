@@ -18,12 +18,14 @@ export const AccordionMenuItem = (props) => {
     ? 'accordion-menu--item-open'
     : `accordion-menu--item-close ${isWithButton ? 'h-7' : 'h-1'}`;
 
+  const itemClass = isOpen ? 'accordion-menu__item--open' : '';
+
   const itemSymbol = isOpen ? '-' : '+';
 
   return (
     <div className='accordion-menu__item-container'>
       <div
-        className='accordion-menu__item'
+        className={`accordion-menu__item ${itemClass}`}
         onClick={() => {
           statusChanged(index);
         }}
