@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PageHeader from '../PageHeader/PageHeader';
 import {
   AccordionMenu,
@@ -6,6 +6,14 @@ import {
 } from '../Custom/AccordionMenu/AccordionMenu';
 
 const Careers = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(() => {
+    return [false, false, false, false];
+  });
+  const statusChanged = (index) => {
+    isMenuOpen[index] = !Boolean(isMenuOpen[index]);
+    setIsMenuOpen([...isMenuOpen]);
+  };
+
   return (
     <div className='career'>
       <PageHeader text='Careers' />
@@ -13,8 +21,10 @@ const Careers = () => {
         <AccordionMenu>
           <AccordionMenuItem
             header='Art Director'
-            isOpen={true}
             isWithButton={true}
+            isOpen={isMenuOpen[0]}
+            index={0}
+            statusChanged={statusChanged}
           >
             The Senior Product Designer will play a key role in every part of
             the design process, from research to conception, to UI/UX, to
@@ -79,19 +89,38 @@ const Careers = () => {
               </li>
             </ul>
           </AccordionMenuItem>
-          <AccordionMenuItem header='Front End Developer' isWithButton={true}>
+          <AccordionMenuItem
+            header='Front End Developer'
+            isWithButton={true}
+            isOpen={isMenuOpen[1]}
+            index={1}
+            statusChanged={statusChanged}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
             quidem itaque, aliquid quae expedita nisi dolore corporis veritatis
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
             soluta officiis!
           </AccordionMenuItem>
-          <AccordionMenuItem header='Interactive Developer' isWithButton={true}>
+
+          <AccordionMenuItem
+            header='Interactive Developer'
+            isWithButton={true}
+            isOpen={isMenuOpen[2]}
+            index={2}
+            statusChanged={statusChanged}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
             quidem itaque, aliquid quae expedita nisi dolore corporis veritatis
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
             soluta officiis!
           </AccordionMenuItem>
-          <AccordionMenuItem header='App Designer' isWithButton={true}>
+          <AccordionMenuItem
+            header='App Designer'
+            isWithButton={true}
+            isOpen={isMenuOpen[3]}
+            index={3}
+            statusChanged={statusChanged}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
             quidem itaque, aliquid quae expedita nisi dolore corporis veritatis
             perferendis adipisci sit vitae fuga laborum ad delectus quas tenetur
@@ -100,6 +129,9 @@ const Careers = () => {
           <AccordionMenuItem
             header='Lead Product Designer, Design Systems'
             isWithButton={true}
+            isOpen={isMenuOpen[4]}
+            index={4}
+            statusChanged={statusChanged}
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
             quidem itaque, aliquid quae expedita nisi dolore corporis veritatis

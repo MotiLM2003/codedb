@@ -1,6 +1,6 @@
 import React from 'react';
-
-import hero from '../../images/hero.jpg';
+import { motion } from 'framer-motion';
+import { moveSideUpDown } from '../../utils/variants';
 import envelop from '../../images/envelop.svg';
 import heroSide from '../../images/home-page-hero-logo.svg';
 import files from '../../images/files.svg';
@@ -40,7 +40,12 @@ const HomePage = () => {
       <section className='wrapper home-page__card flex align-items-center justify-center '>
         <div className='card w-1000 bg-white'>
           <div className=' flex gap-3 justify-space-around align-items-center grow'>
-            <div class='flex justify-center  '>
+            <motion.div
+              variants={moveSideUpDown(-15, -35)}
+              initial='hidden'
+              animate='visible'
+              class='flex justify-center  '
+            >
               <div className='home-page__card-item bg-variant-7  rounded'>
                 <div class='flex direction-column gap-05 align-items-center justify-center'>
                   <div className='home-page__title color-black'>
@@ -60,8 +65,13 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div class='flex justify-center  '>
+            </motion.div>
+            <motion.div
+              variants={moveSideUpDown(-15, 35)}
+              initial='hidden'
+              animate='visible'
+              class='flex justify-center  '
+            >
               <div className='bg-secondary  rounded home-page__card-item'>
                 <div class='flex direction-column gap-05 align-items-center justify-center'>
                   <div className='home-page__title color-white'>Accelerate</div>
@@ -79,7 +89,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

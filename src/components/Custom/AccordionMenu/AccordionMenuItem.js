@@ -18,7 +18,7 @@ const AccordionMenuItem = (props) => {
       <div>
         <div className={`${className} accordion-menu__content`}>{children}</div>
         <div className='justify-flex-end'>
-          <button className='button '>sasad</button>{' '}
+          <button className='button '>sasad</button>
         </div>
       </div>
     </div>

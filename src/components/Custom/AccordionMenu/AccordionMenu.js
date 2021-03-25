@@ -6,7 +6,14 @@ export const AccordionMenu = ({ children }) => {
 
 // Acordion menu item componenet
 export const AccordionMenuItem = (props) => {
-  const { children, header, isOpen = false, isWithButton = false } = props;
+  const {
+    children,
+    header,
+    isOpen = false,
+    isWithButton = false,
+    index,
+    statusChanged,
+  } = props;
   const className = isOpen
     ? 'accordion-menu--item-open'
     : `accordion-menu--item-close ${isWithButton ? 'h-7' : 'h-1'}`;
@@ -15,7 +22,12 @@ export const AccordionMenuItem = (props) => {
 
   return (
     <div className='accordion-menu__item-container'>
-      <div className='accordion-menu__item'>
+      <div
+        className='accordion-menu__item'
+        onClick={() => {
+          statusChanged(index);
+        }}
+      >
         <div className='accordion-menu__box'>
           <div>{header}</div>
           <div className='color-secondary font-size-20'>{itemSymbol}</div>

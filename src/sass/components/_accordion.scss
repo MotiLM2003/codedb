@@ -8,7 +8,7 @@
     transition: all 0.5s;
     &:hover {
       border-width: 5px;
-      transition: all 0.5s;
+      transition: all 0.2s;
     }
   }
 
@@ -18,17 +18,21 @@
     color: $color-dark;
     font-size: 18px;
     font-weight: 700;
-    // border-bottom: 1px solid $gray-light;
-
+    transition: all 0.2s;
+    user-select: none;
+    opacity: 1;
     cursor: pointer;
   }
 
   &--item-open {
-    display: block;
+    opacity: 1;
+    width: inherit;
   }
 
   &--item-close {
     opacity: 0;
+    width: 0;
+    z-index: -1;
   }
 
   &__box {
@@ -48,5 +52,6 @@
     font-size: 16px;
     width: 850px;
     font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
   }
 }

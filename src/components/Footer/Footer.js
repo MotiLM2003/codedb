@@ -1,42 +1,44 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 const Footer = () => {
   return (
     <div className='footer-container'>
       <div className='footer-container__main'>
         <div>
-          <img src={logo} alt='CodeDB Logo' />
+          <Link to='/'>
+            <img src={logo} alt='CodeDB Logo' />
+          </Link>
         </div>
         <div className='footer-container__content'>
           <div className='footer-container__content-row'>
             <div>
-              <a href='#'>Career</a>
+              <Link to='/careers'> Career</Link>
             </div>
             <div>
-              <a href='#'>About Us</a>
+              <Link to='/about'>About Us</Link>
             </div>
             <div>
-              <a href='#'>Press Announcement</a>
-            </div>
-          </div>
-          <div className='footer-container__content-row'>
-            <div>
-              <a href='#'>Terms of Use</a>
-            </div>
-            <div>
-              <a href='#'>Privacy</a>
+              <Link to='/Announcement'>Press Announcement</Link>
             </div>
           </div>
           <div className='footer-container__content-row'>
             <div>
-              <a href='#'>FAQs</a>
+              <Link to='/terms'>Terms of Use</Link>
             </div>
             <div>
-              <a href='#'>Contact</a>
+              <Link to='/privacy'>Privacy</Link>
+            </div>
+          </div>
+          <div className='footer-container__content-row'>
+            <div>
+              <Link to='faqs'>FAQs</Link>
             </div>
             <div>
-              <a href='#'>Imprint</a>
+              <Link to='/contact'>Contact</Link>
+            </div>
+            <div>
+              <Link to='/imprint'>Imprint</Link>
             </div>
           </div>
         </div>
