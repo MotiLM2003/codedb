@@ -207,7 +207,10 @@ const Details = () => {
             {source_code}
           </SyntaxHighlighter>
         </section>
-        <section className='details-container__new-comment'>
+        <section
+          className='details-container__new-comment'
+          style={{ display: 'none' }}
+        >
           <h2 className='header-2 mt-8'>Leave a comment</h2>
           <textarea placeholder='Your comment' />
         </section>
