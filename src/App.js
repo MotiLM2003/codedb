@@ -18,22 +18,13 @@ function changeFavicon(src) {
 
 const App = () => {
   const systemTheme = useSystemTheme();
-  useEffect(() => {
-    const faviconUpdate = async () => {
-      //grab favicon element by ID
-      const favicon = document.getElementById('favicon');
-      console.log(favicon);
-      if (systemTheme === 'light') {
-        changeFavicon('favicon.png');
-      } else {
-        changeFavicon('favicon_dark.png');
-      }
-    };
-    //run our function here
-    faviconUpdate();
-
-    //2nd paramenter passed to useEffect is dependency array so that this effect only runs on changes to count
-  }, []);
+  console.log(systemTheme);
+  if (systemTheme === 'light') {
+    changeFavicon('favicon.png');
+  } else {
+    changeFavicon('favicon_dark.png');
+  }
+  useEffect(() => {}, []);
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
