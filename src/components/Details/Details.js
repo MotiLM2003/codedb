@@ -175,7 +175,7 @@ const Details = () => {
         </div>
         <div className='title-2 mt-4 color-red'>
           {dependencies.map((l, index) => {
-            return `${l} `;
+            return `${l} ${index < dependencies.length - 1 ? ',' : ''}`;
           })}
         </div>
         <div className='details-container__language-Badge mt-4'>
