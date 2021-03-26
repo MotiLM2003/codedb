@@ -4,12 +4,10 @@ const cookie = new Cookies();
 
 const baseURL = 'https://codedb.de';
 let headers = {};
-
-headers.Authorization = `Bearer ${cookie.get('token')}`;
 const axiosInstance = axios.create({
   baseURL: baseURL,
   headers,
-  withCredentials: true,
+  withCredentials: false,
 });
 
 axiosInstance.interceptors.request.use(

@@ -2,7 +2,7 @@ import React from 'react';
 
 const LanguageTag = ({ language }) => {
   const getClassNamee = () => {
-    switch (language) {
+    switch (language.toLowerCase()) {
       case 'javascript': {
         return 'bg-javascript';
       }

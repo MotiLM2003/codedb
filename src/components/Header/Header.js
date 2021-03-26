@@ -6,37 +6,12 @@ import api from '../../apis/api';
 
 import logo from '../../images/logo.png';
 
-const tempLanguage = [
-  'PowerShell',
-  'Python',
-  'CSS',
-  'SQL',
-  'Shell',
-  'HTML',
-  'Java',
-  'Bash',
-  'C#',
-  'C',
-  'Objective-C',
-  'WebAssembly',
-  'Clojure',
-  'Ansible',
-  'Elixir',
-  'Scala',
-  'Rust',
-  'Dart',
-  'VBA',
-  'Visual',
-];
-
 const Header = () => {
   const [languages, setLanguages] = useState(null);
-
   useEffect(() => {
     const getLanguages = async () => {
-      // const { data } = await api.get('get_language_menu');
-      // console.log(data);
-      setLanguages(tempLanguage);
+      const { data } = await api.get('get_language_menu');
+      setLanguages(data);
     };
 
     getLanguages();

@@ -30,6 +30,7 @@ const AppRouter = ({ isUserAuthenticated }) => {
             <Switch>
               <PublicRoute exact path='/' component={HomePage} />
               <PublicRoute path='/careers' component={Careers} />
+              <PublicRoute path='/details' component={Details} />
               <PublicRoute path='/contact' component={Contact} />
               <PublicRoute path='/faqs' component={FAQs} />
               <PublicRoute path='*' component={NotFound} />
