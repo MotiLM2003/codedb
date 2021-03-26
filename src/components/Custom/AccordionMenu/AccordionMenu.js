@@ -19,7 +19,6 @@ export const AccordionMenuItem = (props) => {
     : `accordion-menu--item-close ${isWithButton ? 'h-7' : 'h-1'}`;
 
   const itemClass = isOpen ? 'accordion-menu__item--open' : '';
-
   const itemSymbol = isOpen ? '-' : '+';
 
   return (
