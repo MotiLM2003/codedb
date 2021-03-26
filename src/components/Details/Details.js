@@ -16,13 +16,30 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const avatars = [avatar, avatar2, avatar3, avatar4, avatar5];
 const tempDetails = {
-  'language': ['Javascript', 'Java', 'Php', 'Python'],
+  'language': 'javascript',
   'creator': 'test',
   'date': 1612619142000,
-  'keywords': ['key word 1', 'key word 2', 'key word 3', 'key word 4'],
+  'keywords': ['keyword 1', 'keyword 2', 'keyword 3', 'keyword 4'],
   'dependencies': ['dependecy 1', 'dependecy 2', 'dependecy 3', 'dependecy 4'],
-  'input': 'tes input',
-  'output': 'test output',
+  'input': {
+    description: 'input description',
+    parameters: [
+      { text: 'language', value: 'C#' },
+      { text: 'rvm', value: '2.4.1' },
+      { text: 'before_script', value: 'gem install awesome_bot' },
+      {
+        text: 'script',
+        value:
+          'awesome_bot README.md --allow-redirect --allow-dupe --allow 999',
+      },
+      { text: 'notifications', value: 'notifiction' },
+      { text: 'email', value: 'user@gmail.com' },
+    ],
+  },
+  'output': {
+    description: 'output description',
+    parameters: [{ text: 'output param', value: 'param value' }],
+  },
   'title': 'title test',
   'description': 'description example',
   'source_code': `int main() {\r\n\tprintf("Hello World\\n");\r\n\treturn 0;\r\n}\r\n`,
@@ -99,6 +116,22 @@ const Details = () => {
     getDetails();
   }, []);
 
+  const renderInputOutput = (params) => {
+    if (params && params.length > 0) {
+      return (
+        <section className='details-container__info'>
+          {params.map((param, index) => {
+            return (
+              <div>
+                <span className='color-green'>{param.text}:</span> {param.value}
+              </div>
+            );
+          })}
+        </section>
+      );
+    }
+  };
+
   const renderDetails = () => {
     const {
       title,
@@ -124,9 +157,7 @@ const Details = () => {
           </button>
         </div>
         <section className='details-container__language-tags'>
-          {details.language.map((l) => {
-            return <LanguageTag key={l} language={l} />;
-          })}
+          <LanguageTag language={details.language} />
         </section>
         <div class='title-1 mt-3'>{title}</div>
         <div className='title-2 mt-2'>{description}</div>
@@ -154,32 +185,13 @@ const Details = () => {
         </div>
         <section>
           <div className='title-2 mt-5 bolder color-green'>Output</div>
-          <p className='mt-2'>{output}</p>
+          <p className='mt-2'>{output.description}</p>
+          {renderInputOutput(output.parameters)}
 
           <div className='title-2 mt-3 bolder color-green'>Input</div>
-          <p className='mt-2'>{input}</p>
+          <p className='mt-2'>{input.description}</p>
         </section>
-        <section className='details-container__info'>
-          <div>
-            <span className='color-red'>language:</span> ruby
-          </div>
-          <div>
-            <span className='color-green'>rvm:</span> 2.4.1
-          </div>
-          <div>
-            <span className='color-green'>before_script:</span> gem install
-            awesome_bot
-          </div>
-
-          <div>
-            <span className='color-green'> script:</span> awesome_bot README.md
-            --allow-redirect --allow-dupe --allow 999
-          </div>
-          <p>
-            notifications:
-            <br /> email: false
-          </p>
-        </section>
+        {renderInputOutput(input.parameters)}
 
         <p className='mt-6'>
           If the machine you're attempting privesc on cannot reach GitHub to
