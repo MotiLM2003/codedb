@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { moveUpDown, moveLeftRight } from '../../utils/variants';
+import api from '../../apis/api';
 
 import logo from '../../images/logo.png';
 
+const tempLanguage = [
+  'PowerShell',
+  'Python',
+  'CSS',
+  'SQL',
+  'Shell',
+  'HTML',
+  'Java',
+  'Bash',
+  'C#',
+  'C',
+  'Objective-C',
+  'WebAssembly',
+  'Clojure',
+  'Ansible',
+  'Elixir',
+  'Scala',
+  'Rust',
+  'Dart',
+  'VBA',
+  'Visual',
+];
+
 const Header = () => {
+  const [languages, setLanguages] = useState(null);
+
+  useEffect(() => {
+    const getLanguages = async () => {
+      // const { data } = await api.get('get_language_menu');
+      // console.log(data);
+      setLanguages(tempLanguage);
+    };
+
+    getLanguages();
+  }, []);
+
   return (
     <section className='header-container'>
       <div className='header-container__wrapper'>
@@ -29,7 +65,17 @@ const Header = () => {
               animate='visible'
             >
               <select>
-                <option value='0'>Language</option>
+                <option value='0'>
+                  {languages ? 'Select Language' : 'Loading'}
+                </option>
+                {languages &&
+                  languages.map((language) => {
+                    return (
+                      <option key={language} value={language}>
+                        {language}
+                      </option>
+                    );
+                  })}
               </select>
             </motion.div>
             <motion.div
