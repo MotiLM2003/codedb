@@ -7,6 +7,22 @@
 #root {
   min-width: 1200px;
 }
+#root,
+.wrapper {
+  // @media only screen and (max-width: $bp-1100) {
+  //   min-width: $bp-1100 !important  ;
+  //   width: $bp-1100 !important;
+  // }
+
+  // @media only screen and (max-width: $bp-1000) {
+  //   min-width: $bp-1000 !important;
+  //   width: $bp-1000 !important;
+  // }
+  // @media only screen and (max-width: $bp-860) {
+  //   min-width: $bp-860 !important;
+  //   width: $bp-860 !important;
+  // }
+}
 
 html {
   font-size: 46.5%;

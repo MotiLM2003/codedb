@@ -1,0 +1,62 @@
+@media only screen and (max-width: $bp-1100) {
+  #root {
+    min-width: $bp-1100;
+  }
+}
+
+.header {
+  &__container {
+    // @media only screen and (max-width: $bp-860) {
+    //   margin-right: 12rem !important;
+    // }
+    // @media only screen and (max-width: $bp-1100) {
+    //   margin-right: 10rem;
+    // }
+
+    // @media only screen and (max-width: $bp-1000) {
+    //   margin-right: 12rem;
+    // }
+  }
+  &__humburger-container {
+    @media only screen and (max-width: $bp-1100) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    @media only screen and (max-width: $bp-1300) {
+      margin-left: 0;
+    }
+
+    & img {
+      width: 200px;
+      @media only screen and (max-width: $bp-860) {
+        content: url('../../images/logo-text.png');
+        width: 130px;
+      }
+    }
+  }
+
+  &__login {
+    @media only screen and (max-width: $bp-1300) {
+      margin-right: 0;
+      flex-grow: 1;
+    }
+    @media only screen and (max-width: $bp-1100) {
+      display: none;
+    }
+  }
+
+  &__content-container {
+    @media only screen and (max-width: $bp-1300) {
+      flex-grow: 0;
+      gap: 3rem;
+    }
+  }
+
+  &__search-container {
+    @media only screen and (max-width: $bp-1100) {
+      width: 35rem;
+    }
+  }
+}

@@ -1,8 +1,43 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import useSystemTheme from 'react-use-system-theme';
 import AppRouter from './routers/AppRouter';
 
 // document.head = document.head || document.getElementsByTagName('head')[0];
+
+function setWindowSize() {
+  let windowWidth, myHeight;
+  if (typeof window.innerWidth == 'number') {
+    windowWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else {
+    if (
+      document.documentElement &&
+      (document.documentElement.clientWidth ||
+        document.documentElement.clientHeight)
+    ) {
+      windowWidth = document.documentElement.clientWidth;
+      // myHeight = document.documentElement.clientHeight;
+    } else {
+      if (
+        document.body &&
+        (document.body.clientWidth || document.body.clientHeight)
+      ) {
+        windowWidth = parseInt(document.body.clientWidth);
+        // myHeight = document.body.clientHeight;
+      }
+    }
+  }
+  console.log(windowWidth);
+  if (windowWidth < 1200) {
+    console.log(windowWidth);
+    document.getElementById('root').style.width = `${windowWidth}px`;
+    const wrappers = document.querySelectorAll('.wrapper');
+
+    wrappers.forEach((item) => {
+      item.style.width = `${windowWidth}px`;
+    });
+  }
+}
 
 function changeFavicon(src) {
   var link = document.createElement('link'),
@@ -24,7 +59,11 @@ const App = () => {
   } else {
     changeFavicon('favicon_dark.png');
   }
-  useEffect(() => {}, []);
+
+  useLayoutEffect(() => {
+    window.addEventListener('resize', setWindowSize);
+    setWindowSize();
+  }, []);
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
