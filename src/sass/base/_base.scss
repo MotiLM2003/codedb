@@ -5,29 +5,14 @@
 }
 
 #root {
-  min-width: 1200px;
-}
-#root,
-.wrapper {
-  // @media only screen and (max-width: $bp-1100) {
-  //   min-width: $bp-1100 !important  ;
-  //   width: $bp-1100 !important;
-  // }
-
-  // @media only screen and (max-width: $bp-1000) {
-  //   min-width: $bp-1000 !important;
-  //   width: $bp-1000 !important;
-  // }
-  // @media only screen and (max-width: $bp-860) {
-  //   min-width: $bp-860 !important;
-  //   width: $bp-860 !important;
-  // }
+  // min-width: 1150px;
 }
 
 html {
   font-size: 46.5%;
   scroll-behavior: smooth;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -57,6 +42,9 @@ p {
   margin: 0 auto;
   padding: 1rem 0;
   position: relative;
+  @media only screen and (max-width: $bp-800) {
+    margin: 0 0;
+  }
 }
 
 .position-relative {

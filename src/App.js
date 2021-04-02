@@ -20,21 +20,27 @@ function setWindowSize() {
     } else {
       if (
         document.body &&
-        (document.body.clientWidth || document.body.clientHeight)
+        (document.ody.clientWidth || document.body.clientHeight)
       ) {
         windowWidth = parseInt(document.body.clientWidth);
         // myHeight = document.body.clientHeight;
       }
     }
   }
-  console.log(windowWidth);
+  const wrappers = document.querySelectorAll('.wrapper');
+
   if (windowWidth < 1200) {
     console.log(windowWidth);
-    document.getElementById('root').style.width = `${windowWidth}px`;
-    const wrappers = document.querySelectorAll('.wrapper');
+    // document.getElementById('root').style.width = `${windowWidth}px`;
 
     wrappers.forEach((item) => {
       item.style.width = `${windowWidth}px`;
+      item.style.margin = `0px 0px !important`;
+    });
+  } else {
+    // document.getElementById('root').style.width = `1200px`;
+    wrappers.forEach((item) => {
+      item.style.margin = `0px auto !important`;
     });
   }
 }

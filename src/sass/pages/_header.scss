@@ -79,9 +79,50 @@
   }
 
   &__humburger-container {
-    display: none;
+    & .fa-search {
+      // display: none;
+    }
   }
 
+  &__search-active {
+    border-radius: 0.5rem;
+    padding: 2.1rem 1.2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 20px;
+    display: none;
+    &:hover,
+    &--active {
+      background: rgba($gray, 0.5);
+    }
+  }
+
+  &__floating-searchbar {
+    background: $gray-light;
+    height: 46px;
+    opacity: 1;
+    position: relative;
+
+    justify-content: center;
+    border-top: 3px solid $gray;
+    transition: all 0.5s;
+    overflow: hidden;
+    display: none;
+
+    & > * {
+      // flex-grow: 1;
+    }
+    select {
+      height: 26px;
+      padding: 0.5rem 1.2rem;
+      font-size: 1em;
+    }
+    &--closed {
+      height: 0;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+  }
   // old sass
   &__wrapper {
     height: inherit;
@@ -176,10 +217,10 @@
     margin-left: 1rem;
 
     align-items: center;
-    display: none;
+    // display: none;
   }
 
-  @media only screen and (max-width: $bp-1100) {
+  @media only screen and (max-width: $bp-1000) {
     &__humburger-container {
       display: flex;
     }
